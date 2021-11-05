@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 4,
+  "[rust]": {
+      "editor.defaultFormatter": "rust-lang.rust",
+      "editor.formatOnSave": true 
+  },
+}
