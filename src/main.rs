@@ -166,7 +166,6 @@ async fn main() -> std::io::Result<()> {
         let cookie = matches.value_of("cookie").unwrap();
         App::new()
             .data(AppState {
-                // TODO (tylerchambers): Make these flags / config file options.
                 rpc_conn: Client::new(node, Auth::CookieFile(PathBuf::from(cookie))).unwrap(),
             })
             .service(
